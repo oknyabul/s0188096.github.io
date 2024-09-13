@@ -99,5 +99,58 @@
               <input type="submit" value="Сохранить" />
             </form>
             <div id="down"> </div>
+		 <div style="margin-left: 25px; margin-bottom: 25px;" st>
+          <form action="" method="get" id="a1">
+            <p>
+              <label for="name">Введите ФИО:</label>
+              <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <label for="tel">Введите телефон:</label>
+                <input type="tel" name="tel" id="tel" required>
+              </p>
+            <p>
+              <label for="email">Введите email:</label>
+              <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="date">Введите дату рождения:</label>
+                <input type="date" name="date" id="date" required>
+              </p>
+              <legend>Выберите пол</legend>
+              <br>
+                <label>
+                <input type="radio" name="level">
+                МУЖ
+                </label>
+                <label>
+                <input type="radio" name="level"checked>
+                ЖЕН
+                </label>
+                <label>
+                <input type="radio" name="level">
+                ПЛИТКА
+                </label>
+
+<br>
+          </form>   
+          <label>
+     <p> Любимый язык програмирования:</p>
+      <select name="field-name-3">
+        <option value="Значение0"selected="selected">-</option>
+        <option value="Значение1">С#</option>
+        <option value="Значение2">Java</option>
+        <option value="Значение3">C++</option>
+        <option value="значиние4">JS</option>
+        <option value="Значение5">PHP</option>
+      </select>
+    </label>
+    <br/>
+  <p> Многострочное текстовое поле:</p>
+    <textarea name="field-name-2">Пиши сюда</textarea>
+  </label><br>
+  <br>
+     <input type="submit" value="Отправить" />
+    </div>
     </body>
 </html>
