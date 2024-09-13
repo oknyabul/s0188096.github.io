@@ -9,8 +9,8 @@
     </head>
     <body>
 	<header></header>
-	<ul style="line-height: 30px;">
-        <h1> <a name="zagolovok"> Фрагмент текущей страницы </a> </h1>
+	<ul style="line-height: 30px;"> </ul>
+        <h1> <a id="zagolovok"> Фрагмент текущей страницы </a> </h1>
         <li> <a href="http://kubsu.ru/" target="_blank" > Абсолютная гиперссылка </a> </li>
         <li> <a href="https://kubsu.ru/" target="_blank" > Абсолютная гиперссылка в протоколе https </a> </li>
         <li> Ссылка-изображение <a href="https://avatars.mds.yandex.net/i?id=f1f658061a34c2bb641c82e5dc9213f8_l-5163012-images-thumbs&n=13"> <img src="https://avatars.mds.yandex.net/i?id=f1f658061a34c2bb641c82e5dc9213f8_l-5163012-images-thumbs&n=13" width="350" height="250"></a></li>
@@ -19,7 +19,7 @@
         <li> <a href="./ins.html?kl=jm&catalog=jk&type=html" title="внутренняя страница"> Ссылка с тремя параметрами в URL </a> </li>
 	<li> <a href="ins.html?id=150" title="внутренняя страница"> Ссылка с параметром id в URL </a> </li>
         <li> <a href="./index1.html" target="_blank" > Относительная ссылка на страницу в текущем каталоге </a> </li>
-        <li> <a href="./about\about.html" target="_blank" > Относительная на страницу в каталоге about </a> </li>
+        <li> <a href="./about/about.html" target="_blank" > Относительная на страницу в каталоге about </a> </li>
         <li> <a href="././about/aaa/aaa.html" > Относительная ссылка на страницу в каталоге двумя уровнями ниже текущего </a> </li>
         <li> Контекстная <a href = "https://ru.wikipedia.org/wiki/Кошка" > ссылка </a> в тексте абзаца </li>
         <li> <a href="https://ru.wikipedia.org/wiki/Кошка#Кошки_в_Библии"> Ссылка на фрагмент страницы стороннего сайта </a> </li>
@@ -41,21 +41,21 @@
             <div id="down"> </div>
 		 <div style="margin-left: 25px; margin-bottom: 25px;" st>
           <form action="" method="get" id="a1">
-            <p>
-              <label for="name">Введите ФИО:</label>
-              <input type="text" name="name" id="name" required>
-            </p>
-            <p>
-                <label for="tel">Введите телефон:</label>
-                <input type="tel" name="tel" id="tel" required>
-              </p>
-            <p>
-              <label for="email">Введите email:</label>
-              <input type="email" name="email" id="email" required>
-            </p>
-            <p>
-                <label for="date">Введите дату рождения:</label>
-                <input type="date" name="date" id="date" required>
+            	<p>
+              		<label for="name">Введите ФИО:</label>
+              		<input type="text" name="name" id="name" required>
+            	</p>
+        	<p>
+                	<label for="tel">Введите телефон:</label>
+                	<input type="tel" name="tel" id="tel" required>
+        	</p>
+            	<p>
+              		<label for="email">Введите email:</label>
+              		<input type="email" name="email" id="email" required>
+            	</p>
+            	<p>
+                	<label for="date">Введите дату рождения:</label>
+                	<input type="date" name="date" id="date" required>
               </p>
               <legend>Выберите пол</legend>
               <br>
@@ -64,7 +64,7 @@
                 МУЖ
                 </label>
                 <label>
-                <input type="radio" name="level"checked>
+                <input type="radio" name="level" checked>
                 ЖЕН
                 </label>
 
@@ -73,7 +73,7 @@
           <label>
      <p> Любимый язык програмирования:</p>
       <select name="field-name-3">
-        <option value="Значение0"selected="selected">-</option>
+        <option value="Значение0" selected="selected">-</option>
         <option value="Значение1">С#</option>
         <option value="Значение2">Java</option>
         <option value="Значение3">C++</option>
@@ -81,11 +81,9 @@
         <option value="Значение5">PHP</option>
       </select>
     </label>
-    <br/>
+    <br>
   <p> Многострочное текстовое поле:</p>
     <textarea name="field-name-2">Пиши сюда</textarea>
-  </label><br>
-  <br>
      <input type="submit" value="Отправить" />
     </div>
     </body>
