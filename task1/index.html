@@ -1,1 +1,120 @@
+<!DOCTYPE html>
 
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Ссылки</title>
+    </head>
+    <body>
+
+        <h1> <a name="zagolovok"> Заголовок </a> </h1>
+        
+        <li> <a href="http://kubsu.ru/" target="_blank" > абсолютная гиперссылка </a> </li>
+        
+        <li> <a href="https://kubsu.ru/" target="_blank" > абсолютная гиперссылка </a> </li>
+        
+        <li> ссылка-изображение <a href="https://kubsu.ru/"><img src="https://avatars.mds.yandex.net/get-mpic/5326077/img_id4887098906542273149.jpeg/orig" width="350" height="250"></a></li>
+        
+        <li> <a href="index1.html" target="_blank" > сокращенная ссылка на внутреннюю страницу </a> </li>
+        
+        <li> <a href="#zagolovok"> Ссылка на фрагмент текущей страницы </a> </li>
+
+        <li> <a href = ""> ссылка с 3 параметрами в url </a></li>
+
+        <li> <a href = ""> ссылка с параметром id в url </a></li>
+
+        <li> <a href="./index1.html" target="_blank" > относительная ссылка на страницу в текущем каталоге </a> </li>
+
+        <li> <a href="./about\about.html" target="_blank" > относительная на страницу в каталоге about </a> </li>
+
+        <li> <a href="././about\sky\sky.html" > Относительная ссылка на страницу в каталоге двумя уровнями ниже текущего </a> </li>
+    
+        <li> контекстная <a href = "https://ru.wikipedia.org/wiki/Кошка" > ссылка </a> в тексте абзаца </li>
+
+        <li> <a href="https://ru.wikipedia.org/wiki/Кошка#Кошки_в_Библии"> Ссылка на фрагмент страницы стороннего сайта </a> </li>
+
+        <map name="knopka"> <area shape="circle" coords="70,80,70" href="https://ru.wikipedia.org/wiki/Кошка" > </map> <img src="https://cdn6.aptoide.com/imgs/c/b/a/cba7df796f162fa236bc54e65dc4ac8d_icon.png" width="150" height="150" usemap="#knopka">
+        
+        <map name="knopka"> <area shape="rect" coords="70, 70, 90, 90" href="https://ru.wikipedia.org/wiki/Кошка" alt="Подсказка"> </map> <img src="https://i-a.d-cd.net/dN_6UdiW4RLev-rPyEticygdmMY-1920.jpg" width="150" height="150" usemap="#knopka">
+        
+        <li> <a href="" > пустой href </a> </li>
+
+        <li> <a> без href </a> </li>
+
+        <li> <a href="inside.html" title="inside страница" rel="nofollow">  Ссылка, по которой запрещён переход поисковикам </a> </li>
+        
+        <li> <a href="inside.html" title="noindex">  Запрещённая ссылка для индексации поисковиками </a> </li>
+
+        <li> Нумерованный список ссылок с подписями title
+            <ol>
+                <li> <a href="https://ru.wikipedia.org/wiki/Клубника" title="клубничка"> Клубника </a> </li>
+		<li> <a href="https://ru.wikipedia.org/wiki/Земляника" title="земляничка"> Земляника </a> </li>
+            </ol>
+        </li>
+
+        <p> Ссылка на файл на сервере FTP с авторизацией: <a href="ftp://user:password@ftp.server.com/file.txt">Файл на FTP</a></p>
+    
+        <form action="/" method="POST">
+            <label>
+                ФИО:<br />
+                <input name="field-email"
+                  placeholder="Введите ваши ФИО" />
+              </label><br />
+            <label>
+              Телефон:<br />
+                <input name="field-name"
+                  placeholder="Введите ваш номер телефона" />
+              </label><br />
+            <label>
+                Email:<br />
+                <input name="field-email"
+                  type="email"
+                  placeholder="Введите вашу почту" />
+              </label><br />
+              <label>
+                Дата рождения:<br />
+                <input name="field-date"
+                  value="2019-08-13"
+                  type="date" />
+              </label><br />
+              Пол<br />
+              <label><input type="radio" checked="checked"
+                name="radio-group-1" value="Значение1" />
+                Женский</label>
+              <label><input type="radio"
+                name="radio-group-1" value="Значение2" />
+                Мужской</label><br />
+        
+              <label>
+                Ваш любимый язык программирования:
+                <br />
+                <select name="field-name-4[]"
+                  multiple="multiple">
+                  <option value="Значение1">Pascal</option>
+                  <option value="Значение2" selected="selected">C</option>
+                  <option value="Значение3" selected="selected">C++</option>
+                  <option value="Значение4" selected="selected">JavaScript</option>
+                  <option value="Значение5" selected="selected">PHP</option>
+                  <option value="Значение6" selected="selected">Python</option>
+                  <option value="Значение7" selected="selected">Java</option>
+                  <option value="Значение8" selected="selected">Haskel</option>
+                  <option value="Значение9" selected="selected">Clojure</option>
+                  <option value="Значение10" selected="selected">Prolog</option>
+                  <option value="Значение11" selected="selected">Scala</option>
+                </select>
+              </label><br />
+            <label>
+              Биография:<br />
+                <textarea name="field-name-2">Расскажите о себе</textarea>
+              </label><br />
+                <br />
+              <label><input type="checkbox" checked="checked"
+                name="check-1" />
+                С контрактом ознакомлен (а)</label><br />
+        
+              <input type="submit" value="Сохранить" />
+            </form>
+            <div id="down"> </div>
+    </body>
+</html>
