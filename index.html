@@ -1,180 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link rel="stylesheet" href="style.css">
-        <title> Task #1 HTML </title>
+	<title> Task #1 HTML </title>
 </head>
 <body>
-	    
-	<header></header>
-	   <main>
-		   <h1> <a id="zagolovok"> Фрагмент текущей страницы </a> </h1>
-		   
-		   <ul style="line-height: 30px;">
-        	
-		   <li> <a href="http://kubsu.ru/"> Абсолютная гиперссылка </a> </li>
-		   
-		   <li> <a href="https://kubsu.ru/"> Абсолютная гиперссылка в протоколе https </a> </li>
-        	
-		   <li> Ссылка-изображение <a href="https://avatars.mds.yandex.net/i?id=f1f658061a34c2bb641c82e5dc9213f8_l-5163012-images-thumbs&n=13"> 
-			   <img alt="клубничка" src="1p.jpg" width="350"></a>
-		   </li>
-        	
-		   <li> <a href="index1.html"> Сокращенная ссылка на внутреннюю страницу </a> </li>
-        	
-		   <li> <a href="#zagolovok"> Ссылка на фрагмент текущей страницы </a> </li>
-        	
-		   <li> <a href="./ins.html?kl=jm&catalog=jk&type=html" title="внутренняя страница"> Ссылка с тремя параметрами в URL </a> </li>
-		
-		   <li> <a href="ins.html?id=150" title="внутренняя страница"> Ссылка с параметром id в URL </a> </li>
-        	
-		   <li> <a href="./index1.html" target="_blank" > Относительная ссылка на страницу в текущем каталоге </a> </li>
-        	
-		   <li> <a href="./about/about.html" target="_blank" > Относительная на страницу в каталоге about </a> </li>
-        	
-		   <li> <a href="././about/aaa/aaa.html" > Относительная ссылка на страницу в каталоге двумя уровнями ниже текущего </a> </li>
-        	
-		   <li> Контекстная <a href = "https://ru.wikipedia.org/wiki/Кошка" > ссылка </a> в тексте абзаца </li>
-        	
-		   <li> <a href="https://ru.wikipedia.org/wiki/Кошка#Кошки_в_Библии"> Ссылка на фрагмент страницы стороннего сайта </a> </li>
-        	
+	<h2>Ссылки</h2>
+<ul> 
+    <li> <a href="https://www.kubsu.ru/index.php" title="Main.KubSU"> Абсолютная гиперссылка </a></li> 
+    <li> <a href="https://www.kubsu.ru/" title="Start.KubSU">Абсолютная гиперссылка в протоколе https </a></li> 
+    <li> Ссылка-изображение 
+	<a href="https://avatars.mds.yandex.net/i?id=f1f658061a34c2bb641c82e5dc9213f8_l-5163012-images-thumbs&n=13" title="Strawberry">
+		<img src="https://github.com/oknyabul/s0188096.github.io/blob/28acf790d9911de0b2038c618fbeaa5975416f5c/1p.jpg" width="350" alt="..." title="strawberries">
+            </a>
+    </li>
+    <li> <a href="/s0188096.index1.html" title="внутренняя страница"> Сокращённая ссылка на внутреннюю страницу </a> </li>
+    <li> <a href="#down" title="вниз"> На фрагмент текущей страницы </a> </li>
+	<li> <a href="./ins.html?kl=jm&catalog=jk&type=html" title="с тремя параметрами"> С тремя параметрами в URL </a> </li>
+    <li> <a href="ins.html?id=150" title="с параметром id"> С параметром id в URL </a> </li>
+    <li> <a href="index1.html" title="на страницу в текущем каталоге"> Относительная на страницу в текущем каталоге </a> </li>
+    <li> <a href="./about/about.html" title="на страницу в каталоге about"> Относительная на страницу в каталоге about </a> </li>
+    <li> Контекстная <a href="https://ru.wikipedia.org/wiki/Кошка" title="nnn"> ссылка </a> в тексте абзаца </li>
+    <li> <a href="https://ru.wikipedia.org/wiki/Кошка#Кошки_в_Библии" title="Кошки в Библии"> На фрагмент страницы стороннего сайта </a> </li>
+    <li>Из прямоугольных и круглых областей картинки <br> <img src="https://github.com/oknyabul/s0188096.github.io/blob/28acf790d9911de0b2038c618fbeaa5975416f5c/image.jpg" alt="Кнопки" width="400" usemap="#button">
+            <map name="button">
+                <area shape="circle" coords="50,100,70" alt="круг" href="https://cats.fandom.com/ru/wiki/Кошка" title="Круглая область">
+                <area shape="rect" coords="150,30,300,150" alt="прямоугольник" href="https://www.purinaone.ru/cat/articles/behavior-guide/50-interesnyh-faktov-o-kotah" title="Прямоугольная область">
+            </map>
+    </li>
+	<li> <a href="" > С пустым href </a> </li>
+        <li> <a title="Не является ссылкой"> Без href </a> </li>
+        <li> <a href="ins.html" title="inside страница" rel="nofollow"> 18) Ссылка, по которой запрещён переход поисковикам </a> </li>
+        <li>
+		<!-- <noindex> -->
+                	<a href="ins.html" title="noindex"> 19) Запрещённая ссылка для индексации поисковиками </a>
+            	<!-- </noindex> -->
+        </li>
+        <li> Нумерованный список ссылок с подписями title
+            <ol>
+                <li> <a href="https://ru.wikipedia.org/wiki/Клубника" title="Клубничка"> Клубника </a> </li>
+		<li> <a href="https://ru.wikipedia.org/wiki/Земляника" title="Земляничка"> Земляника </a> </li>
+            </ol>
+        </li>
+        <li> <a href ="ftp://username:password@ftp.test.com:16/file.txt" > На файл на сервере FTP с авторизацией </a> </li>
+    </ul>
 
-			   <li>
-				   <img alt = "кнопка-котик" src="image.jpg" width="300" height="150" usemap="#knopka">
+	
+	<form action="/" method="POST">
+    <label>
+        ФИО:<br />
+        <input name="field-email"
+          placeholder="Введите ваши ФИО" />
+      </label><br />
+	<label>
+      Телефон:<br />
+        <input name="field-name"
+          placeholder="Введите ваш номер телефона" />
+      </label><br />
+	<label>
+        Email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+      <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          value="2019-08-13"
+          type="date" />
+      </label><br />
+      Пол<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Женский</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Мужской</label><br />
 
-			   <p>
-				   <map name="knopka">
-          
-					   <area shape="circle" alt="Закладка 1" coords="50, 100, 70" href="https://ru.wikipedia.org/wiki/Кошка">
-          
-					   <area shape="rect" alt="Закладка 2" coords="150,30,300,150" href="https://ru.wikipedia.org/wiki/Кошка">
-          
-				   </map>
-			   </p>
-			   </li>
-		   <li> <a href="" > Ссылка с пустым href </a> </li>
-        	
-		   <li> <a> Ссылка без href </a> </li> 
-        	
-		   <li> <a href="inside.html" title="inside" rel="nofollow">  Ссылка, по которой запрещён переход поисковикам </a> </li>
-        	
-		   <li> <a href="inside.html" title="no index">  Запрещённая ссылка для индексации поисковиками </a> </li>
-        	
-		   <li> Нумерованный список ссылок с подписями title
-           	
-			   <ol>
-                	
-				   <li> <a href="https://ru.wikipedia.org/wiki/Клубника" title="клубничка"> Клубника </a> </li>
-			
-				   <li> <a href="https://ru.wikipedia.org/wiki/Земляника" title="земляничка"> Земляника </a> </li>
-            	
-			   </ol>
-       		
-		   </li>
+      <label>
+        Ваш любимый язык программирования:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2" selected="selected">C</option>
+          <option value="Значение3" selected="selected">C++</option>
+          <option value="Значение4" selected="selected">JavaScript</option>
+          <option value="Значение5" selected="selected">PHP</option>
+          <option value="Значение6" selected="selected">Python</option>
+          <option value="Значение7" selected="selected">Java</option>
+          <option value="Значение8" selected="selected">Haskel</option>
+          <option value="Значение9" selected="selected">Clojure</option>
+          <option value="Значение10" selected="selected">Prolog</option>
+          <option value="Значение11" selected="selected">Scala</option>
+        </select>
+      </label><br />
+	<label>
+      Биография:<br />
+        <textarea name="field-name-2">Расскажите о себе</textarea>
+      </label><br />
+        <br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        С контрактом ознакомлен (а)</label><br />
 
-        		
-			   <li> Ссылка на файл на сервере FTP с авторизацией: <a href="ftp://user:password@ftp.server.com/file.txt">Файл на FTP</a></li>
-		  
-		   </ul>
-			   
-		   <div style="margin-left: 25px; margin-bottom: 25px;">
-          		
-			   <form method="get" id="a1">
-           		 
-				   <p>
-              			
-					   <label for="name">Введите ФИО:</label>
-              
-					   <input type="text" name="name" id="name" required>
-            
-				   </p>
-            
-				   <p>
-                
-					   <label for="tel">Введите телефон:</label>
-                
-					   <input type="tel" name="tel" id="tel" required>
-              
-				   </p>
-            
-				   <p>
-              
-					   <label for="email">Введите email:</label>
-              
-					   <input type="email" name="email" id="email" required>
-            
-				   </p>
-            
-				   <p>
-                
-					   <label for="date">Введите дату рождения:</label>
-                
-					   <input type="date" name="date" id="date" required>
-              
-				   </p>
-              
-				   <p>Выберите пол</p>
-             
-				   <br>
-                
-				   <label>
-                
-					   <input type="radio" name="level">
-                
-					   МУЖ
-                
-				   </label>
-                
-				   <label>
-                
-					   <input type="radio" name="level" checked>
-                
-					   ЖЕН
-                
-				   </label>
-
-				   <br>
-          
-			   </form>   
-
-			   				   <p>Любимый язык програмирования:</p>
-			   <label>
-     
-
-      
-				   <select name="field-name-3">
-        
-					   <option value="Значение0" selected="selected">-</option>
-        
-					   <option value="Значение1">С#</option>
-        
-					   <option value="Значение2">Java</option>
-        
-					   <option value="Значение3">C++</option>
-        
-					   <option value="значиние4">JS</option>
-        
-					   <option value="Значение5">PHP</option>
-      
-				   </select>
-    
-			   </label>
-    
-  
-			   <p> Многострочное текстовое поле:</p>
-    
-			   <textarea name="field-name-2">Пиши сюда</textarea>
-  
-			   <input type="submit" value="Отправить">
-    
-		   </div>
-  
-	   </main>
-  
-	<footer></footer>
-    
-</body>
-
-</html>
+      <input type="submit" value="Сохранить" />
+    </form>
+    <div id="down"> </div>
+  </body>
+  </html>
