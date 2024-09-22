@@ -1,5 +1,5 @@
 .body {
-    background: right url("task2/фон1.jpg");
+    background: right url("фон1.jpg");
     background-repeat: repeat;
     background-position: 10% 20%;
     background-size: 100% auto;
@@ -75,7 +75,7 @@ tbody tr:nth-child(odd) {
 }
 
 .window0{
-  background: right url("task2/фон2.jpg");
+  background: right url("фон2.jpg");
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 3%;
@@ -85,7 +85,7 @@ tbody tr:nth-child(odd) {
 }
 
 .window1{
-  background: right url("task2/фон2.jpg");
+  background: right url("фон2.jpg");
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 3%;
