@@ -1,5 +1,5 @@
 .body {
-    background: right url("https://github.com/oknyabul/s0188096.github.io/blob/a7226f88de69e478d4e4a2708e6693f4e85eeb88/task2/%D1%84%D0%BE%D0%BD1.jpg");
+    background: right url("фон1.jpg");
     background-repeat: repeat;
     background-position: 10% 20%;
     background-size: 100% auto;
@@ -75,7 +75,7 @@ tbody tr:nth-child(odd) {
 }
 
 .window0{
-  background: right url("https://github.com/oknyabul/s0188096.github.io/blob/a7226f88de69e478d4e4a2708e6693f4e85eeb88/task2/%D1%84%D0%BE%D0%BD2.jpg");
+  background: right url("фон2.jpg");
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 3%;
@@ -85,7 +85,7 @@ tbody tr:nth-child(odd) {
 }
 
 .window1{
-  background: right url("https://github.com/oknyabul/s0188096.github.io/blob/a7226f88de69e478d4e4a2708e6693f4e85eeb88/task2/%D1%84%D0%BE%D0%BD2.jpg");
+  background: right url("фон2.jpg");
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 3%;
