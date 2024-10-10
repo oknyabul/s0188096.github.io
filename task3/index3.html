@@ -3,32 +3,32 @@
 <head>
 
     <meta charset = "UTF-8">
-    <title> Task #2 CSS </title>
+    <title> Task #3 </title>
     <link rel="stylesheet" href="csstask3.css">
-        
+
     
 </head>
 
 
 
 <body class = "body">  
-
-
     <header class = "header">
+      <div class = "logo">
       <img class= "picture" src="логотип.jpg" title = "logo" height = 120 width=120 alt="Site logo">  
-      <nav>   
-        <div class = "nav">
+      <h1 title = "Задание №2"> Task #3 </h1> 
+    </div>
+      <nav class = "nav">    
           <a href="#links" style="color: rgb(0, 0, 0)">Links</a>
           <a href="#planets" style="color: rgb(0, 0, 0)">Planets</a>
           <a href="#form" style="color: rgb(0, 0, 0)">Form</a>  
-        </div>
       </nav>  
-      <h1 title = "Задание №2"> Task #2 </h1>     
+
     </header>
 
 
-
-    <div class = "window0" id = "links">
+<main class = "main">
+    <div class = "links" id = "links">
+      <div class = "window">
       <h1 title = "Ссылки">Links</h1>
       <p><a href = "https://en.wikipedia.org/wiki/Cosmos" style="color: rgb(0, 0, 0)" title = "космос"> Cosmos </a></p>
       <p><a href = "https://en.wikipedia.org/wiki/Sun" style="color: rgb(0, 0, 0)" title = "солнце"> Sun </a></p>
@@ -36,10 +36,11 @@
       <p><a href = "https://en.wikipedia.org/wiki/Milky_Way" style="color: rgb(0, 0, 0)" title = "млечный путь"> Milky Way </a></p>
       <p><a href = "https://en.wikipedia.org/wiki/Universe" style="color: rgb(0, 0, 0)" title = "вселенная"> Universe </a></p>
     </div>
-     
+  </div>
 
+  <div class = "window">
+<div class = "table">
 
-<div class = "window1">
   <table id = "planets">
     <thead>
         <tr>
@@ -103,12 +104,12 @@
     </tbody>
 </table>
 </div>
-
+</div>
 
    
-<div class = "window0">
+<div class = "form">
 
-  <form action="/" method="POST">
+  <form action="/" method="POST" class = "window">
     <label id = "form">
       ФИО:<br />
       <input name="field-email" 
@@ -167,7 +168,8 @@
         <input type="submit" value="Сохранить" />
       </form>
       <div id="down"> </div>
-</div>
+  </div>
+</main>
 
       <div class = "footer">
         <footer>
