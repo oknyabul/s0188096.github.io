@@ -1,1 +1,136 @@
+.body {
+  background: right url("фон1.jpg");
+  background-repeat: repeat;
+  background-size: 100% auto;
+  height: 50px;
+  align-items: center;
+
+}
+
+.header,.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 20px; /*Размер шрифта*/
+  color: #000000; /* Цвет текста */
+  border-radius: 20%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+
+
+.header h1 {
+font-size: 70px;
+}
+
+
+
+.picture{
+float: left;
+margin-left: 25px;
+margin-top: 20px;
+}
+
+textarea{
+resize: both;
+max-width: 300px;
+max-height: 100px;
+min-width: 100px;
+min-height: 50px;
+}
+
+table {
+margin: auto;
+border-collapse: collapse; /* Убирает двойные границы между ячейками */
+}
+
+th, td {
+border: 3px solid #5c396a; /* Граница для ячеек */
+text-align: center; /* Выравнивание текста */
+padding: 8px; /* Отступы внутри ячеек */
+}
+
+th {
+background-color: #c395dc; 
+}
+
+tbody tr:nth-child(even) {
+background-color: #c395dc; /* Цвет фона для четных*/
+}
+
+tbody tr:nth-child(odd) {
+background-color: #ffffff; /* Цвет фона для нечетных*/
+}
+
+.link {
+text-decoration: none;
+}
+
+.window{
+background: right url("фон2.jpg");
+border-radius: 20%;
+font-size: 20px;
+margin: auto;
+margin-bottom: 15px;
+padding: 50px;
+}
+
+
+@media (max-width: 767px) {
+
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .window{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav{
+    display:flex;
+    order: 3;
+    flex-direction: column;
+    padding: 10px
+    }
+
+    .header{
+      flex-direction: column;
+    }
+    .logo{
+      display: flex;
+    }
+
+    .table{
+      order: 1;
+      overflow-x: auto;
+    }
+    .links{
+      order: 2;
+    }
+    .form{
+      order: 3;
+    }
+
+}
+
+@media (min-width: 768px) {
+  
+  .window{
+    width: 80%;
+
+  }
+  .logo{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav{
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    }
+}
 
