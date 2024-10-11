@@ -14,7 +14,7 @@
   padding: 10px;
   font-size: 20px; /*Размер шрифта*/
   color: #000000; /* Цвет текста */
-  border-radius: 20%;
+
   margin-bottom: 15px;
   margin-top: 15px;
   max-width: -webkit-fill-available; /*ширина окна подстраивается под сайт*/
@@ -23,7 +23,7 @@
 
 
 .header h1 {
-font-size: 70px;
+font-size: 60px;
 }
 
 
@@ -34,13 +34,6 @@ margin-left: 25px;
 margin-top: 20px;
 }
 
-textarea{
-resize: both;
-max-width: 300px;
-max-height: 100px;
-min-width: 100px;
-min-height: 50px;
-}
 
 table {
 margin: auto;
@@ -72,7 +65,7 @@ text-decoration: none;
 
 .window{
 background: right url("фон2.jpg");
-border-radius: 20%;
+
 font-size: 20px;
 margin: auto;
 margin-bottom: 15px;
@@ -91,6 +84,8 @@ padding: 50px;
     display: flex;
     flex-direction: column;
     max-width: -webkit-fill-available; /*ширина окна подстраивается под сайт*/
+    border-radius: 3%;
+    padding: 20px;
   }
   .nav{
     display:flex;
@@ -99,8 +94,9 @@ padding: 50px;
     padding: 10px
     }
 
-    .header{
+    .header, .footer{
       flex-direction: column;
+      border-radius: 5%;
     }
 
 
@@ -115,13 +111,17 @@ padding: 50px;
       order: 3;
     }
 
+    .field{
+      width: 100%;
+    }
+
 }
 
 @media (min-width: 576px) {
   
   .window{
     width: 80%;
-
+    border-radius: 5%;
   }
   .logo{
     display: flex;
@@ -135,5 +135,9 @@ padding: 50px;
 
     .table{
       overflow-x: auto;
+    }
+
+    .header, .footer{
+      border-radius: 10%;
     }
 }
