@@ -2,39 +2,10 @@
   background: right url("фон1.jpg");
   background-repeat: repeat;
   background-size: 100% auto;
-  height: 50px;
-  align-items: center;
-  font-weight: bolder;
-}
-
-.main{
-  display: flex;
-  flex-direction: column;
 }
 
 .header,.footer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   border-radius: 5%;
-  background-color: #ffffff;
-  font-size: 20px; /*Размер шрифта*/
-  color: #000000; /* Цвет текста */
-}
-
-.logo{
-  display: flex;
-  flex-direction: row;
-}
-
-.header h1 {
-  font-size: 60px;
-}
-
-.nav{
-  display:flex;
-  order: 3;
-  flex-direction: column;
 }
 
 #nav_button{
@@ -43,26 +14,18 @@
 
 .window{
   background: right url("фон2.jpg");
-  font-size: 20px;
-  border-radius: 3%;
-  display: flex;
-  flex-direction: column;
-}
-
-.links{
-  order: 2;
+  border-radius: 5%;
+  max-width: 960px;
 }
 
 .table {
-  border-collapse: collapse; /* Убирает двойные границы между ячейками */
+  border-collapse: collapse;
   overflow-x: auto;
-  order: 1;
+  max-width: 500px;
 }
 
 th, td {
-  border: 3px solid #5c396a; /* Граница для ячеек */
-  text-align: center; /* Выравнивание текста */
-  padding: 8px; /* Отступы внутри ячеек */
+  border: 3px solid #5c396a;
 }
 
 th {
@@ -70,51 +33,13 @@ th {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #c395dc; /* Цвет фона для четных*/
+  background-color: #c395dc; /*четныe*/
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #ffffff; /* Цвет фона для нечетных*/
-}
-
-.link {
-  text-decoration: none;
+  background-color: #ffffff; /*нечетныe*/
 }
 
 .field{
-  width: 100%;
-}
-
-
-@media (min-width: 576px) {
-  .main{
-    display: contents;
-  }
-
-  .header, .footer{
-    border-radius: 10%;
-    flex-direction: row;
-  }
-
-  .nav{
-    flex-direction: row;
-  }
-
-  .window{
-    width: 80%;
-    border-radius: 5%;
-
-  }
-
-  .links{
-    order: 1;
-  }
-
-  .table{
-    order: 2;
-  }
-
-  .field{
-    width: 200px;
-  }
+  width: 200px;
 }
