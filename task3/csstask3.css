@@ -115,7 +115,7 @@ flex-direction: column;
     width: 80%;
     border-radius: 5%;
     padding: 50px;
-
+    max-width: 960px;
   }
   .logo{
     display: flex;
