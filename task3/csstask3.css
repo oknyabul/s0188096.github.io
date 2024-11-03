@@ -71,7 +71,6 @@ padding: 20px;
 font-size: 20px;
 margin: auto;
 margin-bottom: 15px;
-max-width: -webkit-fill-available; /*ширина окна подстраивается под сайт*/
 border-radius: 3%;
 display: flex;
 flex-direction: column;
@@ -131,11 +130,9 @@ flex-direction: column;
     .links{
       order: 1;
     }
-
-
+  
     .table{
       order: 2;
-
     }
 
     .header, .footer{
