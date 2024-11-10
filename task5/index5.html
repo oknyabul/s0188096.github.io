@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор покупки</title>
+    <link rel="stylesheet" href="csstask5.css">
+</head>
+<body>
 
+    <div class="container">
+        <h2>Калькулятор стоимости заказа</h2>
+    
+        <label for="product">Выберите товар:</label>
+        <select class="button2" id="product">
+            <option value="500">Клубника - 500 руб. за упаковку</option>
+            <option value="200">Малина - 200 руб. за упаковку</option>
+            <option value="350">Голубика - 350 руб. упаковка</option>
+            <option value="700">Ежевика - 700 руб. упаковка</option>
+            <option value="1000">Фейхоа - 1000 руб. упаковка</option>
+        </select>
+
+        <br><br>
+
+        <label for="quantity">Количество упаковок:</label>
+        <input class="button2" type="number" id="quantity" value="1" min="1">
+
+        <br><br>
+
+        <button class="button">Подсчитать стоимость</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="jstask5.js"></script>
+
+</body>
+</html>
