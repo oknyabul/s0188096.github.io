@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const quantity = parseInt(quantityInput.value);
         const pricePerItem = parseFloat(productSelect.value);
 
-        if (isNaN(quantity) || quantity <= 0) {
+        if (isNaN(quantity) || quantity <= 0 || quantity%1!=0) {
             resultDiv.textContent = "Ошибка: введите корректное количество.";
             return;
         }
