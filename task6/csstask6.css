@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(to bottom right, #ffffff, #e487a6);
+    height: 100vh; /* Занять всю высоту окна */
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    font-family: DejaVu Sans Mono, monospace;
+    overflow: hidden;
+    font-size: 20px;
+}
+.container {
+    max-width: 600px;
+    min-height: 250px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для контейнера */
+    border-radius: 15px; /* Скругленные углы */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 25px;
+    padding: 10px;
+}
+.button{
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 20px;
+    background-color: #ffcdde;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+/* Стиль для выбранной радио-кнопки */
+input[type="radio"]:checked {
+    border-color: #e0a2b7;
+    background-color: #e0a2b7; /* Цвет фона при выборе */
+}
+
+.hidden { display: none; }
