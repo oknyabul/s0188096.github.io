@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор покупки</title>
+    <link rel="stylesheet" href="csstask6.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Калькулятор стоимости заказа</h2>
+
+        <fieldset>
+            <legend>Выберите товар:</legend>
+            <label><input type="radio" name="product" value="500"> Товар 1 - 500 руб</label><br>
+            <label><input type="radio" name="product" value="200"> Товар 2 - 200 руб</label><br>
+            <label><input type="radio" name="product" value="350"> Товар 3 - 350 руб</label><br>
+        </fieldset>
+
+        <div id="optionsContainer" class="hidden">
+            <label for="options">Выбор опции:</label>
+            <select id="options">
+                <option value="">-- Выберите опцию --</option>
+                <option value="100">Опция 1 (+100 рублей)</option>
+                <option value="200">Опция 2 (+200 рублей)</option>
+            </select>
+        </div>
+
+        <div id="propertiesContainer" class="hidden">
+            <label><input type="checkbox" class="property" value="50"> Свойство 1 (+50 рублей)</label><br>
+            <label><input type="checkbox" class="property" value="500"> Свойство 2 (+500 рублей)</label><br>
+            <label><input type="checkbox" class="property" value="5000"> Свойство 3 (+5000 рублей)</label><br>
+        </div>
+
+        <br>
+
+        <label for="quantity">Введите количество:</label>
+        <input class="button" type="number" id="quantity" value="1" min="1">
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="jstask6.js"></script>
+
+</body>
+</html>
