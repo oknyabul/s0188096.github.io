@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.gallery {
+    width: 80%; /* Ограничиваем ширину галереи */
+    position: relative; /* Для позиционирования стрелок */
+}
+
+.gallery img {
+    width: 100%; /* Изображения занимают всю ширину слайда */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    transition: transform 0.3s ease; /* Плавный переход */
+}
+
+/* Установка отступов между изображениями */
+.slick-slide {
+    margin: 0 10px; /* Устанавливаем отступы между изображениями */
+}
+
+.slick-list {
+    margin: 0 -10px; /* Убираем отрицательные отступы для сохранения общей ширины */
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 25px; 
+    color: black; 
+}
