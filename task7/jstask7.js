@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 $(document).ready(function(){
   var $gallery = $('.gallery');
   
@@ -20,3 +21,4 @@ $(document).ready(function(){
       ]
   });
 });
+}); 
