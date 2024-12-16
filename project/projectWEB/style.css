@@ -283,6 +283,11 @@ nav li{
     color:#F14D34
 }
 
+.menu_podcat > ul li:hover {
+    background-color: #8e1401; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
+}
+
 
 /* services */
 /* services container podzag1  services_parts services_part_sor  services_imgs  podzag1  */
